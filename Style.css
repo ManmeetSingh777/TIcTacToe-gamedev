@@ -1,0 +1,77 @@
+body {
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+h1 {
+    color: rgb(255, 191, 0);
+    margin-bottom: 20px;
+    font-size: 50px;
+    -webkit-text-stroke: 2px white;
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    color:  rgb(255, 191, 0);
+    cursor: pointer;
+}
+
+
+
+.tagline {
+    color: white;
+    margin-top: 20px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#playAgainBtn {
+    background-color: rgb(255, 191, 0);
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
